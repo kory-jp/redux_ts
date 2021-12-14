@@ -1,3 +1,5 @@
+//counter自身の型定義、各アクションの型定義
+//counterにかかるアクション一覧を定義
 import { Action } from "redux";
 import { ActionTypes } from "../actionTypes";
 
