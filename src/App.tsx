@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "./store";
-import { decrement } from "./redux/counter/action";
-import { incrementOpr } from "./redux/counter/operations";
+import { decrementOpr, incrementOpr } from "./redux/counter/operations";
 
 function App() {
   const countState = useSelector((state: RootState) => state.count.value);
@@ -12,7 +11,7 @@ function App() {
   };
 
   const OnDecrement = () => {
-    dispach(decrement());
+    dispach(decrementOpr());
   };
   return (
     <div>

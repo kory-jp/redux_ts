@@ -11,3 +11,14 @@ export const incrementOpr = () => {
     dispach(increment(updateState));
   };
 };
+
+export const decrementOpr = () => {
+  return async (dispach, getState) => {
+    const count = getState();
+    const value = count.count.value - 1;
+    const updateState: Count = {
+      value: value
+    };
+    dispach(increment(updateState));
+  };
+};

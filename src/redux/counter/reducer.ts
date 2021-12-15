@@ -17,7 +17,7 @@ export const CountReducer = (
     case ActionTypes.incremant:
       return { ...state, ...action.payload };
     case ActionTypes.decremant:
-      return { ...state, value: state.value - 1 };
+      return { ...state, ...action.payload };
   }
   return state;
 };

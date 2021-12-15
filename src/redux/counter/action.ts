@@ -13,8 +13,9 @@ export const increment = (countState: Count): CountActionTypes => {
   };
 };
 
-export const decrement = (): CountActionTypes => {
+export const decrement = (countState: Count): CountActionTypes => {
   return {
-    type: ActionTypes.decremant
+    type: ActionTypes.decremant,
+    payload: countState
   };
 };
