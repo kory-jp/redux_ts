@@ -13,6 +13,7 @@ export type Count = {
 //interfaceは継承が可能でActionクラスを継承している
 interface incrementAction extends Action {
   type: typeof ActionTypes.incremant;
+  payload: Count;
 }
 
 interface decrementAction extends Action {

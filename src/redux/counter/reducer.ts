@@ -15,7 +15,7 @@ export const CountReducer = (
 ): Count => {
   switch (action.type) {
     case ActionTypes.incremant:
-      return { ...state, value: state.value + 1 };
+      return { ...state, ...action.payload };
     case ActionTypes.decremant:
       return { ...state, value: state.value - 1 };
   }
